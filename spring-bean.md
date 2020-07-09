@@ -85,3 +85,10 @@
   >
   >based on bean definition meta data, extensible through post-processors.
 
+## Bean生命周期
+
++ **ScopedProxyMode.INTERFACES** or **ScopedProxyMode.INTERFACES** ?
+
+[Which proxyMode should I choose?](https://stackoverflow.com/questions/21759684/interfaces-or-target-class-which-proxymode-should-i-choose/43013315)
+
+[bean的作用域](https://blog.csdn.net/u013423085/article/details/82872533)
