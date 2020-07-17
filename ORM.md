@@ -451,3 +451,26 @@ public interface BookRepository extends CrudRepository<Books, Long> {}
 
 ## 如何做关联查询
 
+*sql*
+
+```sql
+-- mysql, table subject
+-- books
+CREATE TABLE subject (
+  `id`            BIGINT(20)     NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `insert_time`   TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time`   TIMESTAMP      NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  `subject_id`    INT            NOT NULL COMMENT '类别id',
+  `subject_desc`  VARCHAR(255)   NOT NULL COMMENT '类别描述',
+
+  PRIMARY KEY (`id`),
+  KEY `idx_subject_id`(`subject_id`),
+  KEY `idx_insert_time` (`insert_time`),
+  KEY `idx_update_time` (`update_time`)
+)
+  ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4
+  COLLATE = utf8mb4_unicode_ci
+  COMMENT = '类别描述表';
+```
+
