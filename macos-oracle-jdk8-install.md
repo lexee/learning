@@ -8,7 +8,7 @@ https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
 
 ### 借助私人上传的dmg安装镜像安装(最好校验下md5)
 
-https://www.adobe.com/support/coldfusion/downloads.html
+xxxxxx
 
 ### oracle官方md5校验码
 
